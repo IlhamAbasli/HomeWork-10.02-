@@ -95,12 +95,23 @@ function averageSalary(people){
 
 //      3) Personlarin fullName-ne gore search function-u yazin. (elave parametr olaraq searchText de qebul edecek)
 
-function search(people,searchText) {
-    for (const person of people) {
-        if(person.fullName.trim().toLowerCase().includes(searchText.trim().toLowerCase())){
-            console.log(`**Fullname: ${person.fullName}\n**Age: ${person.age}\n**Salary: ${person.salary}`);
-        }
-    }
-}
+// function search(people,searchText) {
+//     for (const person of people) {
+//         if(person.fullName.trim().toLowerCase().includes(searchText.trim().toLowerCase())){
+//             console.log(`**Fullname: ${person.fullName}\n**Age: ${person.age}\n**Salary: ${person.salary}`);
+//         }
+//     }
+// }
 
-// search(people," h   ")
+
+// function search(people,searchText) {
+//     let res = people.filter(m => m.fullName.trim().toLowerCase().includes(searchText.trim().toLowerCase()))
+//     for (const person of res) {
+//         console.log(`**Fullname: ${person.fullName}\n**Age: ${person.age}\n**Salary: ${person.salary}`);               
+//     }
+//     if(res.length == 0){
+//         console.log("Person not found");
+//     }
+// }
+
+// search(people,"x")
